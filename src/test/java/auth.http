@@ -42,10 +42,16 @@ Content-Type: application/json
 }
 
 
-### Get All Cars
+### Get All Admins
 GET http://localhost:8080/api/admins
 
 
+
+
+
+/// CLIENT
+### Get All Client
+GET http://localhost:8080/api/clients
 
 
 
