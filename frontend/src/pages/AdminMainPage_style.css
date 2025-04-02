@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.admin-logo {
+    width: 60px;
+}
+
+.admin-nav {
+    display: flex;
+    gap: 200px;
+}
+
+.admin-button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.admin-button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.admin-profile:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.admin-title {
+    width: 280px;
+}
+
+
