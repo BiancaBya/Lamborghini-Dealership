@@ -1,5 +1,5 @@
-import "./Signup_style.css";
-import logo from "../assets/lamborghini_title.png";
+import "../style/Signup_style.css";
+import logo from "../../assets/lamborghini_title.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +30,7 @@ export default function Signup() {
             console.log("Signup successful:", data);
 
             alert("Account created! You can now login.");
-            navigate("/"); // Redirect to login
+            navigate("/"); // Redirect to login page
         } catch (err) {
             alert("Something went wrong during sign up.");
             console.error("Signup error:", err);

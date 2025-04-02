@@ -1,5 +1,5 @@
-import "./Login_style.css";
-import logo from "../assets/lamborghini_title.png";
+import "../style/Login_style.css";
+import logo from "../../assets/lamborghini_title.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

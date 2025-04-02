@@ -1,10 +1,10 @@
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import AdminMainPage from "./pages/AdminMainPage";
-import ClientMainPage from "./pages/ClientMainPage.tsx";
+import Login from "./pages/files/Login.tsx";
+import Signup from "./pages/files/Signup.tsx";
+import AdminMainPage from "./pages/files/AdminMainPage.tsx";
+import ClientMainPage from "./pages/files/ClientMainPage.tsx";
 
 function App() {
     return (

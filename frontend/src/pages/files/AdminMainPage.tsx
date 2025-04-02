@@ -1,7 +1,7 @@
-import "./AdminMainPage_style.css";
-import background from '../assets/car_page_image.jpg';
-import logo from '../assets/lamborghini_logo.png';
-import title from '../assets/lamborghini_title.png';
+import "../style/AdminMainPage_style.css";
+import background from '../../assets/car_page_image.jpg';
+import logo from '../../assets/lamborghini_logo.png';
+import title from '../../assets/lamborghini_title.png';
 import { CgProfile } from "react-icons/cg";
 import {JSX} from "react";
 
