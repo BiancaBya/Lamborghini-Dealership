@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.adminprofile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.adminprofile-header {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.adminprofile-logo {
+    width: 60px;
+}
+
+.adminprofile-icon {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 2;
+}
+
+.adminprofile-title-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    z-index: 1;
+}
+
+.adminprofile-icon:hover {
+    transform: scale(1.1);
+}
+
+.adminprofile-main {
+    flex: 1;
+    background: linear-gradient(to bottom, #0c0c0c, #25a566);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminprofile-info {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.adminprofile-info h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 24px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.adminprofile-info .field {
+    margin-bottom: 20px;
+}
+
+.adminprofile-info label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.adminprofile-info input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.adminprofile-info input:focus {
+    border-bottom: 1px solid #25a566;
+}
+
+

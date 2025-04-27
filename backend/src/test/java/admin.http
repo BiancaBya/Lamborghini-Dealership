@@ -1,0 +1,27 @@
+/// ADMIN
+
+### Add Admin
+POST http://localhost:8080/api/admins/save
+Content-Type: application/json
+
+{
+  "email": "bibipulpix@gmail.com",
+  "password": "parola"
+}
+
+
+### Delete Admin
+DELETE http://localhost:8080/api/admins/delete
+Content-Type: application/json
+
+{
+  "id": 2,
+  "email": "bibipulpix@gmail.com",
+  "password": "parola"
+}
+
+
+### Get All Admins
+GET http://localhost:8080/api/admins
+
+

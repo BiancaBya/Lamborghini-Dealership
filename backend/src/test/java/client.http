@@ -1,0 +1,33 @@
+/// CLIENT
+
+### Add Client
+POST http://localhost:8080/api/clients/save
+Content-Type: application/json
+
+{
+  "firstName": "Bianca",
+  "lastName": "Pulpa",
+  "email": "biancabia41352@gmail.com",
+  "password": "parola"
+}
+
+
+### Delete Client
+DELETE http://localhost:8080/api/clients/delete
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "Gigi",
+  "lastName": "Gigel",
+  "email": "gigi@gmail.com",
+  "password": "$2a$10$Xw/h/.CvnHHpvJ/x1sWNDe754x4WUw/.2eC10t6kW58hb1ovoaA2K"
+}
+
+
+### Get All Client
+GET http://localhost:8080/api/clients
+
+
+
+

@@ -1,0 +1,47 @@
+/// CAR
+
+### Add Car
+POST http://localhost:8080/api/cars/save
+Content-Type: application/json
+
+{
+  "model": "Aventador",
+  "year": 2021,
+  "horsepower": 730,
+  "price": 300000
+}
+
+
+### Delete Car
+DELETE http://localhost:8080/api/cars/delete
+Content-Type: application/json
+
+{
+  "model": "Aventador",
+  "year": 2021,
+  "horsepower": 730,
+  "price": 300000
+}
+
+
+### Update Car
+PUT http://localhost:8080/api/cars/2
+Content-Type: application/json
+
+{
+  "model": "Aventador S",
+  "year": 2022,
+  "horsepower": 750,
+  "price": 310000
+}
+
+
+### Get All Cars with valid stock
+GET http://localhost:8080/api/cars
+
+
+### Get All Cars
+GET http://localhost:8080/api/cars/all
+
+
+

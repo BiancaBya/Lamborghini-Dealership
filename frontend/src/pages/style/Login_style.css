@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    background: linear-gradient(to bottom, #0c0c0c, #25a566);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+.form input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login-button {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to right, #00ffae, #00c07b);
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    align-self: center;
+}
+
+.login-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 2px 6px rgba(0, 192, 123, 0.4);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-70px);
+}
+
+.footer {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 16px;
+    color: #b2f7ea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+
+.signup-link {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to right, #00A070, #04ADA7);
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.signup-link:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 2px 6px rgba(0, 255, 174, 0.3);
+}
+
+
+

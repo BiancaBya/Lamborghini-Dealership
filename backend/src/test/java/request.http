@@ -1,0 +1,7 @@
+/// REQUEST
+
+### Get All Requests
+GET http://localhost:8080/api/requests
+
+
+

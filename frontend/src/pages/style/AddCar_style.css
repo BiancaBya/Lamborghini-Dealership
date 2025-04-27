@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.addcar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.addcar-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.addcar-logo {
+    width: 60px;
+}
+
+.addcar-title {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.addcar-profile {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.addcar-profile:hover {
+    transform: scale(1.1);
+}
+
+.addcar-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0c0c0c, #25a566);
+    padding: 40px;
+}
+
+.addcar-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.addcar-input {
+    width: 280px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.addcar-input::placeholder {
+    color: rgba(200, 204, 202, 0.7);
+}
+
+.addcar-button {
+    width: 280px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #035743;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addcar-button:hover {
+    background-color: #053e2f;
+    transform: scale(1.02);
+}
+
+
+
+
+
+

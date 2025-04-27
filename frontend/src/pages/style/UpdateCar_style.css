@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.updatecar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.updatecar-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.updatecar-logo {
+    width: 60px;
+}
+
+.updatecar-title {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.updatecar-profile{
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.updatecar-profile:hover {
+    transform: scale(1.1);
+}
+
+.updatecar-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0c0c0c, #25a566);
+    padding: 40px;
+}
+
+.updatecar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.updatecar-input {
+    width: 280px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.updatecar-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.updatecar-button {
+    width: 280px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #035743;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.updatecar-button:hover {
+    background: #053e2f;
+    transform: scale(1.02);
+}
+
+

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mycars-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.mycars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.mycars-logo {
+    width: 60px;
+}
+
+.mycars-button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.mycars-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.03);
+}
+
+.mycars-profile {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.mycars-profile:hover {
+    transform: scale(1.1);
+}
+
+.mycars-main {
+    flex: 1;
+    background: linear-gradient(to bottom, #0c0c0c, #25a566);
+    padding: 40px;
+    overflow: hidden;
+}
+
+.mycars-loading,
+.mycars-error {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.mycars-table-container {
+    overflow-x: auto;
+    max-height: none;
+    scrollbar-color: rgb(26, 105, 81) rgb(22, 49, 42);
+}
+
+.mycars-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.mycars-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.mycars-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.mycars-table tbody {
+    display: block;
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+.mycars-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.mycars-table tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+.mycars-table tbody tr.selected td {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mycars-table th {
+    padding: 10px 15px;
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+}
+
+
+.mycars-table td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.mycars-table tbody tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.mycars-table tbody tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+

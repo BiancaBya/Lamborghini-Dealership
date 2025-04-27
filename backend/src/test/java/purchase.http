@@ -1,0 +1,13 @@
+/// PURCHASE
+
+### Get All Purchases
+GET http://localhost:8080/api/purchases/all
+
+
+### Get All Purchases for Client
+GET http://localhost:8080/api/purchases?clientId=3
+
+
+
+
+
